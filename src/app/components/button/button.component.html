@@ -1,1 +1,1 @@
-<button [class] = "btnConfig?.class" (click)="handleClick()"> {{ btnConfig?.text }} </button>
+<button [ngClass] = "btnClass" (click)="onClick.emit()" > {{ text }} </button>

@@ -1,7 +1,7 @@
-<app-button [btnConfig]="configBtn"></app-button>
+<app-button btnClass="btn btn-primary" text="Toggle" (onClick)="toggle()"></app-button>
 
 @if(active) {
   <h1>Bootstrap workzando!</h1>
 }
 
-<!-- <router-outlet></router-outlet> -->
+<router-outlet></router-outlet>

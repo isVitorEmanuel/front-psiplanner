@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
 import { ButtonComponent } from "./components/button/button.component";
-import { ButtonConfig } from './interfaces/Button.interface';
-// import { RouterOutlet } from '@angular/router';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [ButtonComponent],
+  imports: [ButtonComponent, RouterOutlet],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
@@ -14,13 +13,7 @@ import { ButtonConfig } from './interfaces/Button.interface';
 export class AppComponent {
   active: boolean = false;
 
-  configBtn: ButtonConfig = {
-    text: "Teste",
-    class: "btn secundary-button",
-    doAction: () => this.toogle()
-  };
-
-  toogle() {
+  toggle() {
     this.active = !this.active;
   }
 }

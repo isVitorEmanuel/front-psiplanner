@@ -14,12 +14,12 @@ button.main-button:hover {
   color: #455D51;
 }
 
-button.secundary-button {
+button.secondary-button {
   background-color: #DCECE6;
   color: #455D51;
 }
 
-button.secundary-button:hover {
+button.secondary-button:hover {
   background-color: #455D51;
   color: #DCECE6;
 }

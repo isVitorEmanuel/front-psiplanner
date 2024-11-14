@@ -1,8 +1,7 @@
 <app-navbar></app-navbar>
-<app-button btnClass="btn main-button" text="Botão" (onClick)="toggle()"></app-button>
 
-@if(active) {
-  <h1>Bootstrap workzando!</h1>
-}
+<div class="main-content">
+  <router-outlet></router-outlet>
+</div>
 
-<router-outlet></router-outlet>
+<app-footer></app-footer>

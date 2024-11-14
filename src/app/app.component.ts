@@ -1,20 +1,17 @@
 import { Component } from '@angular/core';
 import { ButtonComponent } from "./components/button/button.component";
 import { RouterOutlet } from '@angular/router';
-import {NavbarComponent} from './components/navbar/navbar.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { FooterComponent } from "./components/footer/footer.component";
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [ButtonComponent, RouterOutlet, NavbarComponent],
+  imports: [RouterOutlet, NavbarComponent, FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 
 export class AppComponent {
-  active: boolean = false;
 
-  toggle() {
-    this.active = !this.active;
-  }
 }
